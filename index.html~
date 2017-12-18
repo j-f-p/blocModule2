@@ -19,7 +19,7 @@
     <header id="portfolio-header"
       class="mdl-layout__header mdl-layout__header--transparent">
       <h1>Fernando Padilla</h1>
-      <p id="slogan">- portfolio template with sample project -</p>
+      <p id="slogan">- portfolio -</p>
     </header>
 
     <main class="mdl-layout__content mdl-grid">
