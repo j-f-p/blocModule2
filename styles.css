@@ -46,3 +46,7 @@ footer#connect {
     display: flex;
   }
 }
+
+.footer-area {
+  height: 50px;
+}
