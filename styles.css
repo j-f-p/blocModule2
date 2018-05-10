@@ -20,6 +20,31 @@ main {
   max-width: 900px;
 }
 
+.card-image-frame {
+  border-bottom: 1px solid lightgray;
+}
+
+.card-image-frame .card-image-focus-message {
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: gainsboro;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: auto;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-image-frame:hover .card-image-focus-message {
+  visibility: visible;
+  opacity: 1;
+}
+
 .project-description {
   padding-left: 0;
 }
