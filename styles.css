@@ -1,5 +1,6 @@
 header#portfolio-header {
   background: url(images/hero.jpg) center / cover;
+  background-attachment: fixed;
   height: 60vh;
   justify-content: center;
   text-align: center;
