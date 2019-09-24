@@ -11,7 +11,9 @@ body {
 header#portfolio-header {
   background: url(images/hero.jpg) center / cover;
   background-attachment: fixed;
-  height: 60vh;
+  min-height: 12rem;
+  max-height: 20rem;
+  height: 40vh;
   justify-content: center;
   text-align: center;
 }
