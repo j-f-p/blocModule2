@@ -1,227 +1,179 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" \
-      href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<html lang="en">
+<head>
+  <link rel="stylesheet" \
+    href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href=
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href=
 "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Web Portfolio | JF Padilla</title>
-  </head>
+  <title>Web Portfolio | JF Padilla</title>
+</head>
 
-  <body>
-    <header id="portfolio-header"
-      class="mdl-layout__header mdl-layout__header--transparent">
-      <h1 class="title">A Portfolio of Exhibition Projects</h1>
-      <p class="subtitle">by J. F. Padilla</p>
-    </header>
+<body>
+  <header id="portfolio-header"
+    class="mdl-layout__header mdl-layout__header--transparent">
+    <h1 class="title">A Portfolio of Exhibition Projects</h1>
+    <p class="subtitle">by J. F. Padilla</p>
+  </header>
 
-    <main class="mdl-layout__content mdl-grid">
-      <!-- <div class="featured-project mdl-grid mdl-cell mdl-cell--12-col \
-        mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media mdl-cell mdl-cell--5-col \
-          mdl-cell--12-col-tablet">
-          <img src="images/placeholder-1.png" alt="project screenshot"/>
-        </div>
-
-        <div class="mdl-cell mdl-cell--7-col">
-          <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">
-        Featured Project Under Construction</h2>
-          </div>
-          <p class="mdl-card__supporting-text">
-            project description text
-          </p>
-        </div>
-      </div> -->
-
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <a href="https://subject-notes.herokuapp.com/topics" tabindex="-1">
-          <div id="c1tt" class="mdl-card__media card-image-frame">
-            <img src="images/subjectNotes.png" alt="project screenshot" />
-          </div>
-          <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c1tt">
-A start-up delay may occur. Compatible browsers include Chrome 74, Firefox 66
-and Edge 42.
-          </div>
-        </a>
-
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Subject Notes</h2>
-        </div>
-
-        <p class="cd mdl-card__supporting-text">
-This is a web server application for collaboratively compiling notes about a
-subject. The app is developed with Python, Flask and PostgreSQL. It can
-authenticate any user with a Google account.
-        </p>
+  <main class="mdl-layout__content mdl-grid">
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__media card-image-frame">
+          <img src="images/diskSim.png" alt="home page image" />
+          <!-- <span class="card-image-focus-message">
+            demonstration upon request</span> -->
       </div>
 
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <a href="https://matching-game-jfp-2018.netlify.com" tabindex="-1">
-          <div id="c2tt" class="mdl-card__media card-image-frame">
-            <img src="images/matchingGame.png" alt="project screenshot" />
-          </div>
-          <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c2tt">
-Compatible browsers include Chrome 74, Firefox 66 and Edge 42.
-          </div>
-        </a>
-
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Matching Game</h2>
-        </div>
-
-        <p class="cd mdl-card__supporting-text">
-This is a one player game about revealing cards by matching. The game is built
-with HTML, CSS and JavaScript.
-        </p>
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Disk Simulation</h2>
       </div>
 
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <a href="https://image-clicker-album-jfp.netlify.com" tabindex="-1">
-          <div id="c3tt" class="mdl-card__media card-image-frame">
-            <img src="images/image-clicker.png" alt="project screenshot" />
-          </div>
-          <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c3tt">
-Compatible browsers include Chrome 74, Firefox 66 and Edge 42.
-          </div>
-        </a>
+      <p class="cd mdl-card__supporting-text">
+This is a 2D simulation of binary collisions among disks moving along straight
+paths. Separate threads concurrently process the animation and the physics.
+This project is written in C++17. It employs the SDL library for rendering
+graphics.
+      </p>
+    </div>
 
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Image Clicker Album</h2>
-        </div>
-
-        <p class="cd mdl-card__supporting-text">
-This is an album of images. Each default image can be swapped for an image of choice,
-by specifying a new URL. Their labels may also be edited. The app is built with
-HTML, CSS and JavaScript.
-        </p>
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__media card-image-frame">
+          <img src="images/concTraffsim.png" alt="home page image" />
+          <!-- <span class="card-image-focus-message">
+            demonstration upon request</span> -->
       </div>
 
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media card-image-frame">
-            <img src="images/concTraffsim.png" alt="home page image" />
-            <!-- <span class="card-image-focus-message">
-              demonstration upon request</span> -->
-        </div>
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Traffic Simulation</h2>
+      </div>
 
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Traffic Simulation</h2>
-        </div>
-
-        <p class="cd mdl-card__supporting-text">
+      <p class="cd mdl-card__supporting-text">
 This is a city traffic simulation employing a graph model. Separate threads
 concurrently process each vehicle, intersection and traffic light. This project
 is written in C++. It employs C++ interfaces of the OpenCV software library.
-        </p>
+      </p>
+    </div>
+
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__media card-image-frame">
+        <img src="images/linux-monitor.png" alt="project screenshot" />
+        <!-- <span class="card-image-focus-message">
+          demonstration upon request</span> -->
       </div>
 
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media card-image-frame">
-          <img src="images/linux-monitor.png" alt="project screenshot" />
-          <!-- <span class="card-image-focus-message">
-            demonstration upon request</span> -->
-        </div>
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Linux Monitor</h2>
+      </div>
 
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Linux Monitor</h2>
-        </div>
-
-        <p class="cd mdl-card__supporting-text">
+      <p class="cd mdl-card__supporting-text">
 This is a Linux system monitor. Its output includes memory and CPU usage of the
 system's most intense software processes. This project is written in C++ 2017.
 It employs the ncurses C/C++ user interface library.
-        </p>
+      </p>
+    </div>
+
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <a href="https://subject-notes.herokuapp.com/topics" tabindex="-1">
+        <div id="c1tt" class="mdl-card__media card-image-frame">
+          <img src="images/subjectNotes.png" alt="project screenshot" />
+        </div>
+        <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c1tt">
+A start-up delay may occur. Compatible browsers include Chrome 74, Firefox 66
+and Edge 42.
+        </div>
+      </a>
+
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Subject Notes</h2>
       </div>
 
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media card-image-frame">
-            <img src="images/bloccit.png" alt="home page image" />
-            <!-- <span class="card-image-focus-message">
-              demonstration upon request</span> -->
-        </div>
+      <p class="cd mdl-card__supporting-text">
+This is a web server application for collaboratively compiling notes about a
+subject. The app is developed with Python, Flask and PostgreSQL. It can
+authenticate any user with a Google account.
+      </p>
+    </div>
 
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Bloccit</h2>
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <a href="https://matching-game-jfp-2018.netlify.com" tabindex="-1">
+        <div id="c2tt" class="mdl-card__media card-image-frame">
+          <img src="images/matchingGame.png" alt="project screenshot" />
         </div>
+        <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c2tt">
+Compatible browsers include Chrome 74, Firefox 66 and Edge 42.
+        </div>
+      </a>
 
-        <p class="cd mdl-card__supporting-text">
-This is a discussion site built with Ruby on Rails and PostgreSQL. It includes
-authentication, authorization and voting.
-        </p>
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Matching Game</h2>
       </div>
 
-<!--
-      <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media card-image-frame">
-          <img src="images/copterRun.png" alt="project screenshot"/>
-          <!-- <span class="card-image-focus-message">
-            demonstration upon request</span> // \-\->
-        </div>
+      <p class="cd mdl-card__supporting-text">
+This is a one player game about revealing cards by matching. The game is built
+with HTML, CSS and JavaScript.
+      </p>
+    </div>
 
-        <div class="mdl-card__title">
-          <h2 class="ct mdl-card__title-text">Copter Run Demo</h2>
+    <div class="cbc project mdl-cell mdl-card mdl-shadow--4dp">
+      <a href="https://image-clicker-album-jfp.netlify.com" tabindex="-1">
+        <div id="c3tt" class="mdl-card__media card-image-frame">
+          <img src="images/image-clicker.png" alt="project screenshot" />
         </div>
+        <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="c3tt">
+Compatible browsers include Chrome 74, Firefox 66 and Edge 42.
+        </div>
+      </a>
 
-        <p class="cd mdl-card__supporting-text">
-This is a 2D sideview helicopter game. It is written in Python with the Pygame
-library.
-        </p>
+      <div class="mdl-card__title">
+        <h2 class="ct mdl-card__title-text">Image Clicker Album</h2>
       </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div class="mdl-card__media"
-          style="border-bottom: 1px solid lightgray">
-          <img src="images/loremPic2.png" alt="project screenshot"/>
-        </div>
+      <p class="cd mdl-card__supporting-text">
+This is an album of images. Each default image can be swapped for an image of choice,
+by specifying a new URL. Their labels may also be edited. The app is built with
+HTML, CSS and JavaScript.
+      </p>
+    </div>
+  </main>
 
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project under construction</h2>
-        </div>
+  <div class="footer-area"></div>
 
-        <p class="mdl-card__supporting-text">project description</p>
-      </div>
--->
-    </main>
+  <footer id="connect" class="mdl-mini-footer">
+    <ul id="footer-links" class="mdl-mini-footer__link-list">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100013616464065">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+      </li>
 
-    <div class="footer-area"></div>
+      <li>
+        <a href="https://www.linkedin.com/in/j-f-padilla-15b750142/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+      </li>
 
-    <footer id="connect" class="mdl-mini-footer">
-      <ul id="footer-links" class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=100013616464065">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
+      <li>
+        <a href="https://www.codewars.com/users/j-f-p">
+          <i class="fa fa-question-circle" aria-hidden="true"></i>
+        </a>
+      </li>
 
-        <li>
-          <a href="https://www.linkedin.com/in/j-f-padilla-15b750142/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.codewars.com/users/j-f-p">
-            <i class="fa fa-question-circle" aria-hidden="true"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:e-signal@outlook.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+      <li>
+        <a href="mailto:e-signal@outlook.com">
+          <i class="fa fa-envelope-square" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
 </html>
