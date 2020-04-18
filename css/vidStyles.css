@@ -1,0 +1,64 @@
+*:focus {
+  outline: none; /*
+This cancels browser default focus outline. Other effects are specified for
+focus below. */
+}
+
+body {
+  background-color: #a9a9a9;
+}
+
+header#portfolio-header {
+  background: url(../img/hero.jpg) center / cover;
+  background-attachment: fixed;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  color: #a9a9a9;
+  font-size: 2.0rem;
+}
+
+main {
+  text-align: center;
+}
+
+.footer-area {
+  height: 50px;
+}
+
+/*
+footer class mdl-mini-footer has:
+  background-color: #424242;
+*/
+
+footer#connect {
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  color: #a9a9a9;
+}
+
+#footer-links {
+  margin: auto;
+  font-size: 2rem;
+}
+
+#footer-links a:hover,
+#footer-links a:focus {
+  color: #ccc;
+  border-bottom: medium solid #ccc;
+}
+#footer-links a:active {
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 1024px) {
+  header#portfolio-header {
+    display: flex;
+  }
+}
