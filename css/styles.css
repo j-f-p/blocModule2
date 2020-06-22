@@ -98,8 +98,40 @@ Firefox and Edge. Chrome works fine with or without these. */
   width: 100%;
 }
 
+section#articles-section {
+  background: url(../img/hero.jpg) center / cover;
+  background-attachment: fixed;
+}
+section > div {
+/* Since there is only one section the id is not appended (section#... > div). */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  color: #a9a9a9;
+}
+section > div > h2 {
+  font-size: 3rem;
+  font-family: Raleway, Arial, sans-serif;
+  text-align: center;
+}
+section > div > ul {
+  font-size: 2rem;
+  list-style-type: "\273b";
+  line-height: 2;
+}
+section > div > ul > li {
+  padding-left: 1rem;
+}
+section > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+}
+section > div > ul > li > a:hover {
+  text-decoration: underline;
+}
+
 .footer-area {
-  height: 50px;
+  height: 3rem;
 }
 
 /*

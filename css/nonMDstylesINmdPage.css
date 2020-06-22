@@ -1,0 +1,98 @@
+*:focus {
+  outline: none; /*
+This cancels browser default focus outline. Other effects are specified for
+focus below. */
+}
+
+body {
+  background-color: #a9a9a9;
+}
+
+header#portfolio-header {
+  background: url(../img/hero.jpg) center / cover;
+  background-attachment: fixed;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  color: #a9a9a9;
+  font-size: 2.0rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #dcdcdc;
+  font-family: 'Times New Roman', serif;
+}
+
+main > h1,
+main > h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: normal;
+  margin: 1.5rem 0 0 0;
+}
+main > p,
+ul > li > p {
+  font-size: initial;
+  margin: 0 0 1rem 0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.indent {
+  margin-left: 2rem;
+}
+
+.code-header {
+  margin: 0 0 0 1rem;
+}
+
+ul {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  list-style: disc outside;
+}
+
+.footer-area {
+  height: 50px;
+}
+
+/*
+footer class mdl-mini-footer has:
+  background-color: #424242;
+*/
+
+footer#connect {
+  bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  color: #a9a9a9;
+}
+
+#footer-links {
+  margin: auto;
+  font-size: 2rem;
+}
+
+#footer-links a:hover,
+#footer-links a:focus {
+  color: #ccc;
+  border-bottom: medium solid #ccc;
+}
+#footer-links a:active {
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 1024px) {
+  header#portfolio-header {
+    display: flex;
+  }
+}
