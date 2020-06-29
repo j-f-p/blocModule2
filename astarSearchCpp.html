@@ -29,7 +29,7 @@
 <h1 id="a-search-cli-program">Abstract</h1>
 <p>This article describes the logic and execution of a C++ program that employs the A* search algorithm.</p>
 <h2 id="description">Description</h2>
-<p>The C++ program employs the A* search algorithm for finding the shortest route between two points on a 2D Cartesian grid. The program is executed through a command line interface (CLI) and produces output through the associated terminal's standard output. The program was developed with test-driven development (TDD).</p>
+<p>This C++ program employs the A* search algorithm for finding the shortest route between two points on a square grid graph. The program is executed through a command line interface (CLI) and produces output through the associated terminal's standard output. The program was developed with test-driven development (TDD).</p>
 <h2 id="program-pseudocode">Program Pseudocode</h2>
 <pre class="sourceCode"><code>Define node states: open, path, obstacle or closed
 
@@ -85,14 +85,14 @@ Main()
 <h2 id="environment">Environment</h2>
 <p>The program was developed on Ubuntu 19.04. It was compiled with x86_64-linux-gnu-g++-8 (Ubuntu 8.3.0-6ubuntu1) 8.3.0 with <code>-std=c++17</code>, the 2017 ISO C++ standard plus amendments.</p>
 <h2 id="execution">Sample Execution</h2>
-<p>The program reads a file, <code>stateMatrix.csv</code>, containing comma separated values of <code>1</code>s or <code>0</code>s. A <code>1</code> represents a barrier. A <code>0</code> represents an open node. The lines and columns of values represent the two dimensions of the rectangular grid.</p>
+<p>The program reads a file, <code>stateMatrix.csv</code>, containing comma separated values, each either being a <code>1</code> or a <code>0</code>. In thise file, each value represents the initial state of a node of the graph. A <code>1</code> represents a barrier. A <code>0</code> represents an open node. The rows and columns of values represent the two dimensions of the grid graph. The zero-based ordering of these dimensions are node coordinates. For instance, row <code>4</code> and column <code>5</code> are the coordinates of the bottom-right node of the graph.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">cat</span> stateMatrix.csv</span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="ex">0</span>,1,0,0,0,0,</span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="ex">0</span>,1,0,0,0,0,</span>
 <span id="cb2-4"><a href="#cb2-4"></a><span class="ex">0</span>,1,0,0,0,0,</span>
 <span id="cb2-5"><a href="#cb2-5"></a><span class="ex">0</span>,1,0,0,0,0,</span>
 <span id="cb2-6"><a href="#cb2-6"></a><span class="ex">0</span>,0,0,0,1,0,</span></code></pre></div>
-<p>The start and goal node coordinates of the grid for the A* search algorithm are hardcoded in the program as arguments to the <code>Search</code> function. Below is the last development execution. Following the main output, is output from unit tests of the TDD process.</p>
+<p>The start and goal node coordinates of the grid for the A* search algorithm are hardcoded in the program as arguments to the <code>Search</code> function. Then, the <code>Search</code> function further modifies the state matrix as it constructs the shortest route. Below is the last development execution. The main output involves an imperfect representation of the square grid graph due to nonuniform character spacing and an unmatched text line-height. Following the main output, is output from unit tests of the TDD process.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>$ <span class="ex">c++</span> -std=c++17 main.cpp</span>
 <span id="cb3-2"><a href="#cb3-2"></a>$ <span class="ex">./a.out</span></span>
 <span id="cb3-3"><a href="#cb3-3"></a></span>
