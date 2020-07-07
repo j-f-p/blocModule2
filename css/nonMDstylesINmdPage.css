@@ -25,6 +25,8 @@ header#portfolio-header {
 main {
   max-width: 720px;
   margin: 0 auto;
+  padding: 0rem 1rem;
+  overflow: auto;
   background-color: #dcdcdc;
   font-family: 'Times New Roman', serif;
 }
