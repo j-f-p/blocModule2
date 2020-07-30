@@ -27,7 +27,7 @@ main {
 }
 
 .footer-area {
-  height: 50px;
+  height: 2.9rem;
 }
 
 /*
@@ -37,7 +37,8 @@ footer class mdl-mini-footer has:
 
 footer#connect {
   bottom: 0;
-  padding: 0.5rem;
+  padding: 0;
+  height: 3rem;
   position: fixed;
   width: 100%;
   z-index: 1;

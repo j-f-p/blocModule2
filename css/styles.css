@@ -130,8 +130,13 @@ section > div > ul > li > a:hover {
   text-decoration: underline;
 }
 
-.footer-area {
-  height: 3rem;
+.footer-area {/*
+This prevents footer from covering content above this selector's associated div
+element. */
+  height: 2.9rem; /*
+This would ideally be the height of the footer. I found that it was necessary
+to set the height here a little less than the footer height to ensure that this
+area never enters the browser user view.*/
 }
 
 /*
@@ -141,7 +146,8 @@ footer class mdl-mini-footer has:
 
 footer#connect {
   bottom: 0;
-  padding: 0.5rem;
+  padding: 0;
+  height: 3rem;
   position: fixed;
   width: 100%;
   z-index: 1;
