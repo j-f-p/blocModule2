@@ -31,13 +31,18 @@ main {
   font-family: 'Times New Roman', serif;
 }
 
-main > h1,
 main > h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: normal;
   margin: 1.5rem 0 0 0;
+}
+main > h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3rem;
+  line-height: normal;
+  margin: 1.3rem 0 0 0;
 }
 main > p,
 ul > li > p {

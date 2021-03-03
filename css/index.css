@@ -114,10 +114,16 @@ section > div > h2 {
   font-family: Raleway, Arial, sans-serif;
   text-align: center;
 }
+section > div > h3 {
+  font-size: 2rem;
+  font-family: Raleway, Arial, sans-serif;
+  margin-bottom: 0;
+}
 section > div > ul {
   font-size: 2rem;
   list-style-type: "\273b";
   line-height: 2;
+  margin: 0;
 }
 section > div > ul > li {
   padding-left: 1rem;

@@ -10,38 +10,34 @@
   <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
-  <link rel="stylesheet" href="css/nonMDstylesINmdPage.css">
-  <link rel="stylesheet" href="css/mdStyles.css">
+  <link rel="stylesheet" href="css/article.css">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script>
-  MathJax = {
-    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-  };
+    MathJax = { tex: {inlineMath: [['$', '$']]} };
   </script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-  <title>MathJax Exhibit | JF Padilla</title>
+  <title>Conjecture Proved | JF Padilla</title>
 </head>
 
 <body>
   <header id="portfolio-header"
     class="mdl-layout__header mdl-layout__header--transparent">
-    <h1 class="subtitle">
-      A Mathematical Proof Rendered with MathJax</h1>
+    <h1 class="subtitle">Proof of a Conjecture by Mathematical Induction</h1>
   </header>
   <br>
   <main>
-    <h1>Objective</h1>
+    <h2>Objective</h2>
     <p>This article conjectures a closed form solution for the product</p>
 $$\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)
   \left(1-\frac{1}{4}\right)\cdots\left(1-\frac{1}{n}\right)$$
     <p>Then, it proves the conjecture by mathematical induction.</p>
 
-    <h1>Conjecture</h1>
+    <h2>Conjecture</h2>
     <p>To arrive at a conjecture, observe that</p>
 $$\left(1-\frac{1}{2}\right) = \frac{1}{2}$$
 $$\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)
@@ -57,13 +53,12 @@ $$\left(1-\frac{1}{2}\right)\left(1-\frac{1}{3}\right)
 $$\prod\limits_{i=2}^n\left(1-\frac{1}{i}\right) = \frac{1}{n}
 \textrm{ for any integer } n \geq 2$$
 
-    <h1>Proof by Mathematical Induction</h1>
+    <h2>Proof by Mathematical Induction</h2>
     <p>Let the property $P(n)$ be the equation</p>
 $$\prod\limits_{i=2}^n\left(1-\frac{1}{i}\right) = \frac{1}{n}$$
     <p>for an integer $n \geq 2$.</p>
-    <br>
 
-    <p><em>Basis Step</em></p>
+    <h3>Basis Step</h3>
     <p>First, show that the base equation $P(2)$ is true. To establish $P(2)$,
     we must show that</p>
 $$\prod\limits_{i=2}^2\left(1-\frac{1}{i}\right) = \frac{1}{2}$$
@@ -74,9 +69,8 @@ $$\prod\limits_{i=2}^2\left(1-\frac{1}{i}\right) = \frac{1}{2}$$
 &= \frac{1}{2}
 \end{align*}
     <p>which is the right-hand side of $P(2)$. Thus, $P(2)$ is true.</p>
-    <br>
 
-    <p><em>Inductive Step</em></p>
+    <h3>Inductive Step</h3>
     <p>Next, show that, for all integers $k \geq 2$, if $P(k)$ is true, then
     $P(k+1)$ is also true. Begin by stating the inductive hypothesis: for any
     integer $k \geq 2$, then $P(k)$:</p>
@@ -99,9 +93,8 @@ $$\prod\limits_{i=2}^{k+1}\left(1-\frac{1}{i}\right) = \frac{1}{k+1}$$
 \end{align*}
     <p>which is the right-hand side of $P(k+1)$. Thus, $P(k+1)$ follows from
     $P(k)$ for any integer $k \geq 2$.</p>
-    <br>
 
-    <p><em>Conclusion</em></p>
+    <h3>Conclusion</h3>
     <p>Since the basis and inductive steps are true, $P(n)$ is true for any
     integer $n \geq 2$. Thus, the conjecture is true. $\blacksquare$</p>
   </main>
